@@ -1,0 +1,28 @@
+.title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 10px;
+
+    @media (min-width: 768px) {
+        margin-left: 0;
+    }
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.button-menu {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.app-bar {
+    justify-content: space-between;
+    padding: 0 100px 0 40px;
+
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
+}
