@@ -1,19 +1,23 @@
 <template>
-  <VApp :theme="theme">
-    <VMain>
-      <RouterView />
-    </VMain>
-  </VApp>
+  <v-app theme="dark">
+    <v-main>
+      <TemplateComponent />
+    </v-main>
+  </v-app>
 </template>
 
-<script lang="ts">
-import Template from "@/components/Template.vue";
-import { mapGetters } from "vuex";
+<script>
+import TemplateComponent from "./components/Template.vue";
 
 export default {
-  computed: {
-    ...mapGetters(["theme"]),
+  name: "App",
+
+  components: {
+    TemplateComponent,
   },
-  components: { Template },
+
+  data: () => ({
+    //
+  }),
 };
 </script>

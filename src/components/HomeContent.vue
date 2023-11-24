@@ -1,5 +1,0 @@
-<template>
-  <h1>Content Home</h1>
-</template>
-
-<script setup lang="ts"></script>

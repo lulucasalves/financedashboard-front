@@ -1,12 +1,24 @@
 <template>
-  <TopMenu />
-  <slot />
+  <div class="container">
+    <NavDiv />
+    <Content />
+  </div>
 </template>
 
-<script lang="ts">
-import TopMenu from "./TopMenu.vue";
+<script>
+import NavDiv from "./Nav/NavDiv.vue";
+import Content from "./Content/Content.vue";
 
 export default {
-  components: { TopMenu },
+  name: "TemplateComponent",
+  components: { NavDiv, Content },
 };
 </script>
+
+<style scoped>
+.container {
+  display: flex;
+  overflow: hidden;
+  max-height: 100vh;
+}
+</style>
